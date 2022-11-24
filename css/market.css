@@ -1,0 +1,125 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	
+}
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+}
+.hero{
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(30deg, #101010, #191919, #ffae09);
+	animation: color 8s ease infinite;
+	background-size: cover;
+	background-position: center;
+}
+@keyframes hero{
+	0%{
+		background-position: 0%;
+	}
+	50%{
+		background-position: 100%;
+	}
+	100%{
+		background-position: 0%;
+	}
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 0px;
+	padding-left: 5%;
+	padding-right: 5%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	background-color: #191919;
+	z-index: 999999;
+}
+
+.logo{
+	color: white;
+	font-size: 30px;
+	letter-spacing: 1px;
+	cursor: pointer;
+	margin-right: 25px;
+}
+span{
+	color: #ffae09;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px  25px;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+nav ul li a:hover{
+	color: #ffae09;
+	transition: .4s;
+}
+h1{
+	color: white;
+	margin: 20px 0px 20px;
+	font-size: 80px;
+}
+h3{
+	color: white;
+	font-size: 25px;
+	margin-bottom: 50px;
+}
+h4{
+	color: #fcfc;
+	letter-spacing: 2px;
+	font-size: 20px;
+}
+.newslatter form{
+	width: 380px;
+	max-width: 100%;
+	position: relative;
+}
+.newslatter form input:first-child{
+	display: inline-block;
+	width: 100%;
+	padding: 14px 130px 14px 15px;
+	border: 2px solid #ffae09;
+	outline: none;
+	border-radius: 30px;
+}
+.newslatter form input:last-child{
+	position: absolute;
+	display: inline-block;
+	outline: none;
+	border: none;
+	padding: 10px 30px;
+	border-radius: 30px;
+	background-color:#ffae09;
+	color: white;
+	box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+	top: 6px;
+	right: 6px; 
+	bottom: 6px;
+}
+body::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #191919;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #ffae09;
+  }
